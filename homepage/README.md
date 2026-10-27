@@ -11,7 +11,7 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Pages
 
-**`index.html`, the homepage**, follows the Freight services page reference:
+**`trades.html`, the Ardent for Trades homepage** (the Ardent Compute homepage is `index.html`),, follows the Freight services page reference:
 
 1. Hero with full-bleed warehouse photograph
 2. Our focus statement

@@ -184,7 +184,7 @@ const page = (t) => {
   return `${head}  <main>
     <section class="tp-hero wrap">
       <div class="tp-hero__text">
-        <p class="eyebrow mono"><a href="index.html#trades">Trades</a> / ${t.short}</p>
+        <p class="eyebrow mono"><a href="trades.html#trades">Trades</a> / ${t.short}</p>
         <h1>${t.headline}</h1>
         <p class="tp-hero__intro">${t.intro}</p>
         <div class="btns">
