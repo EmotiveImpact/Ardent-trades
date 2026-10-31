@@ -242,3 +242,68 @@ html { scroll-padding-top: 80px; }
 @media (max-width: 820px) {
   html.ardent .trades__item:not(.is-active) .trades__go { display: none; }
 }
+
+/* Blend the hero into the section below and the closing image into the section above */
+html.ardent .hero__bg::after {
+  background:
+    radial-gradient(60% 50% at 78% 70%, rgba(255,106,26,0.10), transparent 70%),
+    linear-gradient(180deg, rgba(7,7,7,0.55) 0%, rgba(7,7,7,0.05) 32%, rgba(7,7,7,0.55) 62%, rgba(7,7,7,0.9) 86%, #070707 100%);
+}
+html.ardent .cta .shot::after {
+  background: linear-gradient(180deg, #070707 0%, rgba(7,7,7,0.85) 12%, rgba(7,7,7,0.35) 34%, rgba(7,7,7,0.15) 70%, rgba(7,7,7,0.6) 100%);
+}
+
+/* ---------- Ardent Compute homepage and product labels ---------- */
+.logo__sub {
+  margin-left: 10px; font-family: var(--sans); font-size: 12px; font-weight: 400;
+  letter-spacing: 0.02em; text-transform: none; opacity: 0.6;
+}
+.offers { padding-top: clamp(20px, 4vw, 60px); }
+.offers .role__num { letter-spacing: 0.04em; }
+.role__by { display: inline-block; margin-left: 12px; font-family: var(--sans); font-size: 0.6em; letter-spacing: 0.02em; text-transform: none; opacity: 0.7; }
+.offers .role__label { white-space: normal; line-height: 1.6; }
+
+.principles { padding-block: clamp(60px, 8vw, 110px); }
+.principles__list { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(24px, 3vw, 48px); }
+.principles__list li { display: grid; gap: 12px; align-content: start; padding-top: 22px; box-shadow: inset 0 1px 0 #1c1c1c; }
+.principles__list h3 { font-weight: 500; font-size: 18px; letter-spacing: -0.01em; }
+.principles__list p { font-size: 14px; color: var(--text-soft); max-width: 360px; }
+
+.engine { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(32px, 5vw, 80px); padding-block: clamp(40px, 6vw, 90px) clamp(80px, 10vw, 140px); }
+.engine__head { display: grid; gap: 22px; align-content: start; }
+.engine__head .lead { font-size: clamp(20px, 2vw, 28px); }
+.engine__list li { display: grid; grid-template-columns: 11.5rem 1fr auto; gap: 16px; align-items: baseline; padding-block: 20px; box-shadow: inset 0 -1px 0 #1c1c1c; }
+.engine__name { font-family: var(--wide); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+.engine__does { color: var(--text-soft); font-size: 14px; }
+.engine__list .hud-v { color: var(--faint); font-size: 11.5px; }
+.engine__list li:nth-child(-n+2) .hud-v { color: #f2f2f2; }
+
+.company { padding-block: clamp(40px, 6vw, 90px) clamp(80px, 10vw, 140px); }
+
+@media (max-width: 820px) {
+  .principles__list { grid-template-columns: 1fr; }
+  .engine { grid-template-columns: 1fr; }
+  .engine__list li { grid-template-columns: 1fr auto; gap: 4px 16px; }
+  .engine__does { grid-column: 1 / -1; grid-row: 2; }
+  .logo__sub { font-size: 11px; margin-left: 8px; }
+  .offers .role.is-active { height: 560px; }
+}
+@media (min-width: 821px) {
+  .compute .footer__top { min-height: 176px; }
+}
+
+/* Compute header: the Ardent Core screen set at an angle behind the headline */
+.hero__product { overflow: hidden; background: #070707; }
+.hero__mono { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% center; }
+.hero__glow { position: absolute; right: 10%; top: 30%; width: 50vw; height: 50vw; background: radial-gradient(closest-side, rgba(255,106,26,0.14), transparent); }
+.hero__stage { position: absolute; right: -6vw; top: 9%; width: min(78vw, 1180px); perspective: 1800px; }
+.hero__stage img { width: 100%; display: block; border-radius: 14px; transform: rotateY(-16deg) rotateX(6deg) rotateZ(1deg); transform-origin: 70% 40%; box-shadow: 0 40px 120px rgba(0,0,0,0.7); }
+html.ardent .hero__product::after {
+  background:
+    linear-gradient(90deg, #070707 0%, rgba(7,7,7,0.92) 30%, rgba(7,7,7,0.2) 62%, rgba(7,7,7,0) 100%),
+    linear-gradient(180deg, rgba(7,7,7,0) 38%, rgba(7,7,7,0.85) 72%, #070707 92%);
+}
+@media (max-width: 820px) {
+  .hero__stage { top: 13%; right: -40vw; width: 150vw; }
+  html.ardent .hero__product::after { background: linear-gradient(180deg, rgba(7,7,7,0.3) 0%, rgba(7,7,7,0.5) 40%, #070707 72%); }
+}
