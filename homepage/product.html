@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Michroma&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="ardent.css">
+  <link rel="stylesheet" href="moments.css">
 </head>
 <body class="page page--ink">
   <div class="mnav" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
@@ -81,6 +82,23 @@
       </div>
     </section>
 
+
+    <!-- Live product moments -->
+    <section class="moments wrap" aria-labelledby="moments-title">
+      <div class="moments__head">
+        <p class="eyebrow mono">+ In practice</p>
+        <div>
+          <h2 id="moments-title">Small moments that add up.</h2>
+          <p>Each panel is a real flow in Ardent today. Names and figures are examples.</p>
+        </div>
+      </div>
+      <div class="moments__grid moments__grid--4">
+        <div class="moment"><div class="mviz" data-moment="quote" aria-label="A quote adding up its lines"></div><h3>Quotes that write themselves</h3><p>Built from the survey notes and your price list, ready for the office to check and send.</p></div>
+        <div class="moment"><div class="mviz" data-moment="approve" aria-label="A refund held to approve"></div><h3>People approve the money</h3><p>Refunds, credits and anything regulated wait for a named person to hold and confirm.</p></div>
+        <div class="moment"><div class="mviz" data-moment="invoice" aria-label="An invoice moving from sent to paid"></div><h3>Invoices that chase themselves</h3><p>Polite reminders go out on your schedule, and the office sees the moment it is paid.</p></div>
+        <div class="moment"><div class="mviz" data-moment="offline" aria-label="An engineer's phone saving work with no signal"></div><h3>Works with no signal</h3><p>Engineers keep working in plant rooms and basements. Everything sends when the phone is back online.</p></div>
+      </div>
+    </section>
 
     <section class="feat wrap">
       <div class="feat__text">
@@ -193,5 +211,6 @@
   </footer>
 
   <script src="main.js"></script>
+  <script src="moments.js"></script>
 </body>
 </html>

@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Michroma&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="ardent.css">
+  <link rel="stylesheet" href="moments.css">
 </head>
 <body>
   <div class="mnav" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
@@ -186,6 +187,22 @@
       </ol>
     </section>
 
+    <!-- 4b. See it work: live product moments -->
+    <section class="moments wrap" aria-labelledby="moments-title">
+      <div class="moments__head">
+        <p class="eyebrow mono">+ See it work</p>
+        <div>
+          <h2 id="moments-title">One job, start to finish.</h2>
+          <p>The office, the engineer and the phone line working from the same job record. Names and figures are examples.</p>
+        </div>
+      </div>
+      <div class="moments__grid">
+        <div class="moment"><div class="mviz" data-moment="job" aria-label="A job moving from booked to paid"></div><h3>Ardent Core</h3><p>Every job from booking to paid, with the diary, quotes, invoices and approvals in one place.</p></div>
+        <div class="moment"><div class="mviz" data-moment="servicing" aria-label="Servicing visits filling across a month"></div><h3>Servicing and renewals</h3><p>Annual services and certificate renewals tracked per property, with the late ones flagged.</p></div>
+        <div class="moment"><div class="mviz" data-moment="draft" aria-label="A drafted reply waiting for approval"></div><h3>Ardent Voice</h3><p>Answers calls and messages after hours, books the job and drafts the reply for your yes.</p></div>
+      </div>
+    </section>
+
     <!-- 5. Trades we cover -->
     <section id="trades" class="trades wrap">
       <div class="trades__img">
@@ -292,6 +309,7 @@
   </footer>
 
   <script src="main.js"></script>
+  <script src="moments.js"></script>
 
 </body>
 </html>
